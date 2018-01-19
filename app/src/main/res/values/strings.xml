@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OvertimeView</string>
+    <string name="basicwage">请输入本月基本工资</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="yuan">元</string>
+    <string name="daysetting">天数设置</string>
+    <string name="dayhint">请输入本月工作天数</string>
+    <string name="monthwage">月加班汇总</string>
+</resources>

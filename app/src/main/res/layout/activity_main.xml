@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.v_chzha4.overtimeview.MainActivity"
+    android:orientation="vertical" >
+
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="391dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="0dp"
+        android:calendarViewShown="false"
+        android:padding="0dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title_wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="月基本工资 (元/月)："
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/show_basicwage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title_wage"
+            android:padding="20dp"
+            android:textSize="18sp" />
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:src="@drawable/ic_menu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enterBasicWage"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/title_hourwage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="小时工资 (元/小时)："
+            android:padding="20dp"
+            android:layout_below="@+id/title_wage"
+            />
+
+        <TextView
+            android:id="@+id/show_hourwage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_basicwage"
+            android:layout_toRightOf="@+id/title_hourwage"
+            android:padding="20dp"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btn_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daysetting"
+            android:layout_below="@+id/btn_add"
+            android:layout_alignParentRight="true"
+            android:textColor="#6495ED"
+            android:background="@null"
+            android:onClick="daySetting"
+            />
+        <Button
+            android:id="@+id/month_totalwage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/monthwage"
+            android:layout_below="@+id/show_hourwage"
+            android:textColor="#6495ED"
+            android:background="@null"
+            android:textSize="18sp"
+            android:onClick="monthlyWage"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
